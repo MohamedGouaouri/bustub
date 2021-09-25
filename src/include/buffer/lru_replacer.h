@@ -15,6 +15,7 @@
 #include <list>
 #include <mutex>  // NOLINT
 #include <vector>
+#include <algorithm>
 
 #include "buffer/replacer.h"
 #include "common/config.h"
@@ -47,6 +48,10 @@ class LRUReplacer : public Replacer {
 
  private:
   // TODO(student): implement me!
+  // Some data structures to track page usage count
+  std::list<frame_id_t> pages_queue_;
+  size_t max_num_pages_;
+  frame_id_t *victim_page_;
 };
 
 }  // namespace bustub

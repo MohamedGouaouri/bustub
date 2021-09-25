@@ -14,16 +14,45 @@
 
 namespace bustub {
 
-LRUReplacer::LRUReplacer(size_t num_pages) {}
+LRUReplacer::LRUReplacer(size_t num_pages) {
+  this->max_num_pages_ = num_pages;
+}
 
 LRUReplacer::~LRUReplacer() = default;
 
-bool LRUReplacer::Victim(frame_id_t *frame_id) { return false; }
+bool LRUReplacer::Victim(frame_id_t *frame_id) {
+  if(Size() == 0) {
+    return false;
+  }
+  frame_id = &pages_queue_.front();
+  victim_page_ = frame_id;
+  // pop it
+  pages_queue_.pop_front();
+  return true; }
 
 void LRUReplacer::Pin(frame_id_t frame_id) {}
 
-void LRUReplacer::Unpin(frame_id_t frame_id) {}
+void LRUReplacer::Unpin(frame_id_t frame_id) {
+  if (pages_queue_.size() == max_num_pages_){
+    // maximum capacity reached
 
-size_t LRUReplacer::Size() { return 0; }
+  } else{
+    // check if frame_id exists
+    auto it  = std::find(pages_queue_.begin(), pages_queue_.end(), frame_id);
+    if (it == pages_queue_.end()){
+      // element does not exist
+      // push it back
+      pages_queue_.push_back(frame_id);
+    } else{
+      // element exists
+      pages_queue_.remove(frame_id);
+      // push it back
+      pages_queue_.push_back(frame_id);
+    }
+
+  }
+}
+
+size_t LRUReplacer::Size() { return pages_queue_.size(); }
 
 }  // namespace bustub
