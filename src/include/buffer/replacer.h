@@ -45,6 +45,8 @@ class Replacer {
 
   /** @return the number of elements in the replacer that can be victimized */
   virtual size_t Size() = 0;
+
+  virtual size_t GetNumPinnedPages() =0;
 };
 
 }  // namespace bustub

@@ -47,12 +47,15 @@ class LRUReplacer : public Replacer {
 
   size_t Size() override;
 
+  size_t GetNumPinnedPages() override ;
+
  private:
   // TODO(student): implement me!
   // Some data structures to track page usage count
   std::list<frame_id_t> pages_queue_;
   std::map<frame_id_t, size_t> pin_counts_;
   size_t max_num_pages_;
+  size_t num_pinned_pages = 0;
 };
 
 }  // namespace bustub

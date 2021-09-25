@@ -38,6 +38,7 @@ void LRUReplacer::Pin(frame_id_t frame_id) {
     pin_counts_[frame_id]++;
     // remove the frame containing the pinned page from the LRUReplacer
     pages_queue_.remove(frame_id);
+    num_pinned_pages++;
   }
 }
 
@@ -52,15 +53,13 @@ void LRUReplacer::Unpin(frame_id_t frame_id) {
       // element does not exist
       // push it back
       pages_queue_.push_back(frame_id);
-    } else{
-//      // element exists
-//      pages_queue_.remove(frame_id);
-//      // push it back
-//      pages_queue_.push_back(frame_id);
     }
   }
 }
 
 size_t LRUReplacer::Size() { return pages_queue_.size(); }
 
+size_t LRUReplacer::GetNumPinnedPages(){
+  return num_pinned_pages;
+}
 }  // namespace bustub
