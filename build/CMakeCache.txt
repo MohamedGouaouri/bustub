@@ -18,10 +18,10 @@
 BUILD_GMOCK:BOOL=ON
 
 //Value Computed by CMake
-BusTub_BINARY_DIR:STATIC=/home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build
+BusTub_BINARY_DIR:STATIC=$(pwd)/bustub-private/build
 
 //Value Computed by CMake
-BusTub_SOURCE_DIR:STATIC=/home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private
+BusTub_SOURCE_DIR:STATIC=$(pwd)/bustub-private
 
 //Path to a program.
 CLANG_FORMAT_BIN:FILEPATH=/usr/bin/clang-format
