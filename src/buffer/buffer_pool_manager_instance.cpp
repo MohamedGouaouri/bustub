@@ -48,6 +48,7 @@ BufferPoolManagerInstance::~BufferPoolManagerInstance() {
 
 bool BufferPoolManagerInstance::FlushPgImp(page_id_t page_id) {
   // Make sure you call DiskManager::WritePage!
+
   return false;
 }
 
@@ -61,7 +62,15 @@ Page *BufferPoolManagerInstance::NewPgImp(page_id_t *page_id) {
   // 2.   Pick a victim page P from either the free list or the replacer. Always pick from the free list first.
   // 3.   Update P's metadata, zero out memory and add P to the page table.
   // 4.   Set the page ID output parameter. Return a pointer to P.
-  return nullptr;
+  *page_id = AllocatePage();
+  if (replacer_->GetNumPinnedPages() == pool_size_ / PAGE_SIZE){
+    return nullptr;
+  }
+  frame_id_t frame_id;
+  replacer_->Victim(&frame_id);
+  memset((pages_ + frame_id * PAGE_SIZE)->data_, '\0', PAGE_SIZE);
+  page_table_[*page_id] = frame_id;
+  return pages_ + frame_id * PAGE_SIZE;
 }
 
 Page *BufferPoolManagerInstance::FetchPgImp(page_id_t page_id) {
@@ -82,7 +91,7 @@ Page *BufferPoolManagerInstance::FetchPgImp(page_id_t page_id) {
     frame_id = page_table_[page_id];
     replacer_->Pin(frame_id);
     return pages_ + frame_id * PAGE_SIZE;
-  } else{
+  }
     // P does not exist
     // find a replacement page, first from the free list
     if (!free_list_.empty()){
@@ -99,7 +108,7 @@ Page *BufferPoolManagerInstance::FetchPgImp(page_id_t page_id) {
     page_table_[replacement_page->GetPageId()] = frame_id;
     // update P's metadata ?
     return pages_ + frame_id * PAGE_SIZE;
-  }
+
 }
 
 bool BufferPoolManagerInstance::DeletePgImp(page_id_t page_id) {
@@ -108,10 +117,24 @@ bool BufferPoolManagerInstance::DeletePgImp(page_id_t page_id) {
   // 1.   If P does not exist, return true.
   // 2.   If P exists, but has a non-zero pin-count, return false. Someone is using the page.
   // 3.   Otherwise, P can be deleted. Remove P from the page table, reset its metadata and return it to the free list.
-  return false;
+  DeallocatePage(page_id);
+  if (page_table_.find(page_id) == page_table_.end()){
+    // page_id does not exist in page_table
+    return true;
+  }
+  // get the page
+  Page* page = pages_ + page_id * PAGE_SIZE;
+  if (page->GetPinCount() > 0){
+    return false;
+  }
+  page_table_.erase(page_id);
+  return true;
 }
 
-bool BufferPoolManagerInstance::UnpinPgImp(page_id_t page_id, bool is_dirty) { return false; }
+bool BufferPoolManagerInstance::UnpinPgImp(page_id_t page_id, bool is_dirty) {
+  Page* page = pages_ + page_id * PAGE_SIZE;
+  return page->GetPinCount() > 0;
+}
 
 page_id_t BufferPoolManagerInstance::AllocatePage() {
   const page_id_t next_page_id = next_page_id_;
