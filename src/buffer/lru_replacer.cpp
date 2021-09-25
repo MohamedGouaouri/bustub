@@ -16,6 +16,7 @@ namespace bustub {
 
 LRUReplacer::LRUReplacer(size_t num_pages) {
   this->max_num_pages_ = num_pages;
+  this->victim_page_ = nullptr;
 }
 
 LRUReplacer::~LRUReplacer() = default;
@@ -30,7 +31,15 @@ bool LRUReplacer::Victim(frame_id_t *frame_id) {
   pages_queue_.pop_front();
   return true; }
 
-void LRUReplacer::Pin(frame_id_t frame_id) {}
+void LRUReplacer::Pin(frame_id_t frame_id) {
+  // check if frame_id is in the pool
+  auto it = std::find(pages_queue_.begin(), pages_queue_.end(), frame_id);
+  if (it != pages_queue_.end()){
+    // frame is found
+    // set pin count to 1 I think
+    pin_counts_[frame_id] = 1;
+  }
+}
 
 void LRUReplacer::Unpin(frame_id_t frame_id) {
   if (pages_queue_.size() == max_num_pages_){
