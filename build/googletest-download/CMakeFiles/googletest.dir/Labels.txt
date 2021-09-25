@@ -1,0 +1,14 @@
+# Target labels
+ googletest
+# Source files and their labels
+/home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/googletest-download/CMakeFiles/googletest
+/home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/googletest-download/CMakeFiles/googletest.rule
+/home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/googletest-download/CMakeFiles/googletest-complete.rule
+/home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/googletest-download/googletest-prefix/src/googletest-stamp/googletest-install.rule
+/home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/googletest-download/googletest-prefix/src/googletest-stamp/googletest-mkdir.rule
+/home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/googletest-download/googletest-prefix/src/googletest-stamp/googletest-download.rule
+/home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/googletest-download/googletest-prefix/src/googletest-stamp/googletest-update.rule
+/home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/googletest-download/googletest-prefix/src/googletest-stamp/googletest-patch.rule
+/home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/googletest-download/googletest-prefix/src/googletest-stamp/googletest-configure.rule
+/home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/googletest-download/googletest-prefix/src/googletest-stamp/googletest-build.rule
+/home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/googletest-download/googletest-prefix/src/googletest-stamp/googletest-test.rule

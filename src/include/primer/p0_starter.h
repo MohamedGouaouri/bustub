@@ -145,12 +145,12 @@ class RowMatrix : public Matrix<T> {
   T GetElement(int i, int j) const override {
     // throw NotImplementedException{"RowMatrix::GetElement() not implemented."};
     // formula idx = (i - 1) * cols_ + j - 1;
-    int idx = (i - 1) * cols_ + j - 1;
-    int matrixSize = rows_ * cols_;
+    int idx = (i - 1) * this->cols_ + j - 1;
+    int matrixSize = this->rows_ * this->cols_;
     if (idx >= matrixSize) {
-      throw Exception(ExceptionType.OUT_OF_RANE, "Out of range");
+      throw Exception(ExceptionType::OUT_OF_RANGE, "Out of range");
     }
-    return linear_[idx];
+    return this->linear_[idx];
   }
 
   /**
@@ -165,12 +165,12 @@ class RowMatrix : public Matrix<T> {
    */
   void SetElement(int i, int j, T val) override {
     // formula idx = (i - 1) * cols_ + j - 1;
-    int idx = (i - 1) * cols_ + j - 1;
-    int matrixSize = rows_ * cols_;
+    int idx = (i - 1) * this->cols_ + j - 1;
+    int matrixSize = this->rows_ * this->cols_;
     if (idx >= matrixSize) {
-      throw Exception(ExceptionType.OUT_OF_RANE, "Out of range");
+      throw Exception(ExceptionType::OUT_OF_RANGE, "Out of range");
     }
-    linear_[idx] = val;
+    this->linear_[idx] = val;
   }
 
   /**
