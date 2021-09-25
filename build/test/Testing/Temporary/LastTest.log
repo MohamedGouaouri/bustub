@@ -1,10 +1,10 @@
-Start testing: Sep 25 09:06 CET
+Start testing: Sep 25 13:05 CET
 ----------------------------------------------------------
 1/21 Testing: buffer_pool_manager_instance_test
 1/21 Test: buffer_pool_manager_instance_test
 Command: "/home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test/buffer_pool_manager_instance_test" "--gtest_color=yes" "--gtest_output=xml:/home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test/buffer_pool_manager_instance_test.xml"
 Directory: /home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test
-"buffer_pool_manager_instance_test" start time: Sep 25 09:06 CET
+"buffer_pool_manager_instance_test" start time: Sep 25 13:05 CET
 Output:
 ----------------------------------------------------------
 Running main() from gmock_main.cc
@@ -16,10 +16,10 @@ Running main() from gmock_main.cc
 
 [m
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"buffer_pool_manager_instance_test" end time: Sep 25 09:06 CET
+"buffer_pool_manager_instance_test" end time: Sep 25 13:05 CET
 "buffer_pool_manager_instance_test" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -27,7 +27,7 @@ Test Passed.
 2/21 Test: clock_replacer_test
 Command: "/home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test/clock_replacer_test" "--gtest_color=yes" "--gtest_output=xml:/home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test/clock_replacer_test.xml"
 Directory: /home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test
-"clock_replacer_test" start time: Sep 25 09:06 CET
+"clock_replacer_test" start time: Sep 25 13:05 CET
 Output:
 ----------------------------------------------------------
 Running main() from gmock_main.cc
@@ -39,10 +39,10 @@ Running main() from gmock_main.cc
 
 [m
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"clock_replacer_test" end time: Sep 25 09:06 CET
+"clock_replacer_test" end time: Sep 25 13:05 CET
 "clock_replacer_test" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -50,22 +50,25 @@ Test Passed.
 3/21 Test: lru_replacer_test
 Command: "/home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test/lru_replacer_test" "--gtest_color=yes" "--gtest_output=xml:/home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test/lru_replacer_test.xml"
 Directory: /home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test
-"lru_replacer_test" start time: Sep 25 09:06 CET
+"lru_replacer_test" start time: Sep 25 13:05 CET
 Output:
 ----------------------------------------------------------
 Running main() from gmock_main.cc
-[0;32m[==========] [mRunning 0 tests from 0 test suites.
-[0;32m[==========] [m0 tests from 0 test suites ran. (0 ms total)
-[0;32m[  PASSED  ] [m0 tests.
+[0;32m[==========] [mRunning 1 test from 1 test suite.
+[0;32m[----------] [mGlobal test environment set-up.
+[0;32m[----------] [m1 test from LRUReplacerTest
+[0;32m[ RUN      ] [mLRUReplacerTest.SampleTest
+[0;32m[       OK ] [mLRUReplacerTest.SampleTest (0 ms)
+[0;32m[----------] [m1 test from LRUReplacerTest (0 ms total)
 
-[0;33m  YOU HAVE 1 DISABLED TEST
-
-[m
+[0;32m[----------] [mGlobal test environment tear-down
+[0;32m[==========] [m1 test from 1 test suite ran. (0 ms total)
+[0;32m[  PASSED  ] [m1 test.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"lru_replacer_test" end time: Sep 25 09:06 CET
+"lru_replacer_test" end time: Sep 25 13:05 CET
 "lru_replacer_test" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -73,7 +76,7 @@ Test Passed.
 4/21 Test: parallel_buffer_pool_manager_test
 Command: "/home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test/parallel_buffer_pool_manager_test" "--gtest_color=yes" "--gtest_output=xml:/home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test/parallel_buffer_pool_manager_test.xml"
 Directory: /home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test
-"parallel_buffer_pool_manager_test" start time: Sep 25 09:06 CET
+"parallel_buffer_pool_manager_test" start time: Sep 25 13:05 CET
 Output:
 ----------------------------------------------------------
 Running main() from gmock_main.cc
@@ -85,10 +88,10 @@ Running main() from gmock_main.cc
 
 [m
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"parallel_buffer_pool_manager_test" end time: Sep 25 09:06 CET
+"parallel_buffer_pool_manager_test" end time: Sep 25 13:05 CET
 "parallel_buffer_pool_manager_test" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -96,7 +99,7 @@ Test Passed.
 5/21 Test: catalog_test
 Command: "/home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test/catalog_test" "--gtest_color=yes" "--gtest_output=xml:/home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test/catalog_test.xml"
 Directory: /home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test
-"catalog_test" start time: Sep 25 09:06 CET
+"catalog_test" start time: Sep 25 13:05 CET
 Output:
 ----------------------------------------------------------
 Running main() from gmock_main.cc
@@ -108,10 +111,10 @@ Running main() from gmock_main.cc
 
 [m
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"catalog_test" end time: Sep 25 09:06 CET
+"catalog_test" end time: Sep 25 13:05 CET
 "catalog_test" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -119,7 +122,7 @@ Test Passed.
 6/21 Test: rwlatch_test
 Command: "/home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test/rwlatch_test" "--gtest_color=yes" "--gtest_output=xml:/home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test/rwlatch_test.xml"
 Directory: /home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test
-"rwlatch_test" start time: Sep 25 09:06 CET
+"rwlatch_test" start time: Sep 25 13:05 CET
 Output:
 ----------------------------------------------------------
 Running main() from gmock_main.cc
@@ -127,17 +130,17 @@ Running main() from gmock_main.cc
 [0;32m[----------] [mGlobal test environment set-up.
 [0;32m[----------] [m1 test from RWLatchTest
 [0;32m[ RUN      ] [mRWLatchTest.BasicTest
-[0;32m[       OK ] [mRWLatchTest.BasicTest (3 ms)
-[0;32m[----------] [m1 test from RWLatchTest (3 ms total)
+[0;32m[       OK ] [mRWLatchTest.BasicTest (2 ms)
+[0;32m[----------] [m1 test from RWLatchTest (2 ms total)
 
 [0;32m[----------] [mGlobal test environment tear-down
-[0;32m[==========] [m1 test from 1 test suite ran. (3 ms total)
+[0;32m[==========] [m1 test from 1 test suite ran. (2 ms total)
 [0;32m[  PASSED  ] [m1 test.
 <end of output>
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"rwlatch_test" end time: Sep 25 09:06 CET
+"rwlatch_test" end time: Sep 25 13:05 CET
 "rwlatch_test" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -145,7 +148,7 @@ Test Passed.
 7/21 Test: lock_manager_test
 Command: "/home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test/lock_manager_test" "--gtest_color=yes" "--gtest_output=xml:/home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test/lock_manager_test.xml"
 Directory: /home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test
-"lock_manager_test" start time: Sep 25 09:06 CET
+"lock_manager_test" start time: Sep 25 13:05 CET
 Output:
 ----------------------------------------------------------
 Running main() from gmock_main.cc
@@ -160,7 +163,7 @@ Running main() from gmock_main.cc
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"lock_manager_test" end time: Sep 25 09:06 CET
+"lock_manager_test" end time: Sep 25 13:05 CET
 "lock_manager_test" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -168,7 +171,7 @@ Test Passed.
 8/21 Test: transaction_test
 Command: "/home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test/transaction_test" "--gtest_color=yes" "--gtest_output=xml:/home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test/transaction_test.xml"
 Directory: /home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test
-"transaction_test" start time: Sep 25 09:06 CET
+"transaction_test" start time: Sep 25 13:05 CET
 Output:
 ----------------------------------------------------------
 Running main() from gmock_main.cc
@@ -183,7 +186,7 @@ Running main() from gmock_main.cc
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"transaction_test" end time: Sep 25 09:06 CET
+"transaction_test" end time: Sep 25 13:05 CET
 "transaction_test" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -191,7 +194,7 @@ Test Passed.
 9/21 Test: hash_table_page_test
 Command: "/home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test/hash_table_page_test" "--gtest_color=yes" "--gtest_output=xml:/home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test/hash_table_page_test.xml"
 Directory: /home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test
-"hash_table_page_test" start time: Sep 25 09:06 CET
+"hash_table_page_test" start time: Sep 25 13:05 CET
 Output:
 ----------------------------------------------------------
 Running main() from gmock_main.cc
@@ -203,10 +206,10 @@ Running main() from gmock_main.cc
 
 [m
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"hash_table_page_test" end time: Sep 25 09:06 CET
+"hash_table_page_test" end time: Sep 25 13:05 CET
 "hash_table_page_test" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -214,7 +217,7 @@ Test Passed.
 10/21 Test: hash_table_test
 Command: "/home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test/hash_table_test" "--gtest_color=yes" "--gtest_output=xml:/home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test/hash_table_test.xml"
 Directory: /home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test
-"hash_table_test" start time: Sep 25 09:06 CET
+"hash_table_test" start time: Sep 25 13:05 CET
 Output:
 ----------------------------------------------------------
 Running main() from gmock_main.cc
@@ -226,10 +229,10 @@ Running main() from gmock_main.cc
 
 [m
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"hash_table_test" end time: Sep 25 09:06 CET
+"hash_table_test" end time: Sep 25 13:05 CET
 "hash_table_test" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -237,7 +240,7 @@ Test Passed.
 11/21 Test: executor_test
 Command: "/home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test/executor_test" "--gtest_color=yes" "--gtest_output=xml:/home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test/executor_test.xml"
 Directory: /home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test
-"executor_test" start time: Sep 25 09:06 CET
+"executor_test" start time: Sep 25 13:05 CET
 Output:
 ----------------------------------------------------------
 Running main() from gmock_main.cc
@@ -252,7 +255,7 @@ Running main() from gmock_main.cc
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"executor_test" end time: Sep 25 09:06 CET
+"executor_test" end time: Sep 25 13:05 CET
 "executor_test" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -260,7 +263,7 @@ Test Passed.
 12/21 Test: starter_test
 Command: "/home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test/starter_test" "--gtest_color=yes" "--gtest_output=xml:/home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test/starter_test.xml"
 Directory: /home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test
-"starter_test" start time: Sep 25 09:06 CET
+"starter_test" start time: Sep 25 13:05 CET
 Output:
 ----------------------------------------------------------
 Running main() from gmock_main.cc
@@ -282,7 +285,7 @@ Running main() from gmock_main.cc
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"starter_test" end time: Sep 25 09:06 CET
+"starter_test" end time: Sep 25 13:05 CET
 "starter_test" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -290,7 +293,7 @@ Test Passed.
 13/21 Test: recovery_test
 Command: "/home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test/recovery_test" "--gtest_color=yes" "--gtest_output=xml:/home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test/recovery_test.xml"
 Directory: /home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test
-"recovery_test" start time: Sep 25 09:06 CET
+"recovery_test" start time: Sep 25 13:05 CET
 Output:
 ----------------------------------------------------------
 Running main() from gmock_main.cc
@@ -305,7 +308,7 @@ Running main() from gmock_main.cc
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"recovery_test" end time: Sep 25 09:06 CET
+"recovery_test" end time: Sep 25 13:05 CET
 "recovery_test" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -313,7 +316,7 @@ Test Passed.
 14/21 Test: b_plus_tree_concurrent_test
 Command: "/home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test/b_plus_tree_concurrent_test" "--gtest_color=yes" "--gtest_output=xml:/home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test/b_plus_tree_concurrent_test.xml"
 Directory: /home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test
-"b_plus_tree_concurrent_test" start time: Sep 25 09:06 CET
+"b_plus_tree_concurrent_test" start time: Sep 25 13:05 CET
 Output:
 ----------------------------------------------------------
 Running main() from gmock_main.cc
@@ -328,7 +331,7 @@ Running main() from gmock_main.cc
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"b_plus_tree_concurrent_test" end time: Sep 25 09:06 CET
+"b_plus_tree_concurrent_test" end time: Sep 25 13:05 CET
 "b_plus_tree_concurrent_test" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -336,30 +339,7 @@ Test Passed.
 15/21 Test: b_plus_tree_delete_test
 Command: "/home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test/b_plus_tree_delete_test" "--gtest_color=yes" "--gtest_output=xml:/home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test/b_plus_tree_delete_test.xml"
 Directory: /home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test
-"b_plus_tree_delete_test" start time: Sep 25 09:06 CET
-Output:
-----------------------------------------------------------
-Running main() from gmock_main.cc
-[0;32m[==========] [mRunning 0 tests from 0 test suites.
-[0;32m[==========] [m0 tests from 0 test suites ran. (0 ms total)
-[0;32m[  PASSED  ] [m0 tests.
-
-[0;33m  YOU HAVE 2 DISABLED TESTS
-
-[m
-<end of output>
-Test time =   0.01 sec
-----------------------------------------------------------
-Test Passed.
-"b_plus_tree_delete_test" end time: Sep 25 09:06 CET
-"b_plus_tree_delete_test" time elapsed: 00:00:00
-----------------------------------------------------------
-
-16/21 Testing: b_plus_tree_insert_test
-16/21 Test: b_plus_tree_insert_test
-Command: "/home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test/b_plus_tree_insert_test" "--gtest_color=yes" "--gtest_output=xml:/home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test/b_plus_tree_insert_test.xml"
-Directory: /home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test
-"b_plus_tree_insert_test" start time: Sep 25 09:06 CET
+"b_plus_tree_delete_test" start time: Sep 25 13:05 CET
 Output:
 ----------------------------------------------------------
 Running main() from gmock_main.cc
@@ -374,7 +354,30 @@ Running main() from gmock_main.cc
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"b_plus_tree_insert_test" end time: Sep 25 09:06 CET
+"b_plus_tree_delete_test" end time: Sep 25 13:05 CET
+"b_plus_tree_delete_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+16/21 Testing: b_plus_tree_insert_test
+16/21 Test: b_plus_tree_insert_test
+Command: "/home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test/b_plus_tree_insert_test" "--gtest_color=yes" "--gtest_output=xml:/home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test/b_plus_tree_insert_test.xml"
+Directory: /home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test
+"b_plus_tree_insert_test" start time: Sep 25 13:05 CET
+Output:
+----------------------------------------------------------
+Running main() from gmock_main.cc
+[0;32m[==========] [mRunning 0 tests from 0 test suites.
+[0;32m[==========] [m0 tests from 0 test suites ran. (0 ms total)
+[0;32m[  PASSED  ] [m0 tests.
+
+[0;33m  YOU HAVE 2 DISABLED TESTS
+
+[m
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"b_plus_tree_insert_test" end time: Sep 25 13:05 CET
 "b_plus_tree_insert_test" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -382,7 +385,7 @@ Test Passed.
 17/21 Test: b_plus_tree_print_test
 Command: "/home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test/b_plus_tree_print_test" "--gtest_color=yes" "--gtest_output=xml:/home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test/b_plus_tree_print_test.xml"
 Directory: /home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test
-"b_plus_tree_print_test" start time: Sep 25 09:06 CET
+"b_plus_tree_print_test" start time: Sep 25 13:05 CET
 Output:
 ----------------------------------------------------------
 Running main() from gmock_main.cc
@@ -397,7 +400,7 @@ Running main() from gmock_main.cc
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"b_plus_tree_print_test" end time: Sep 25 09:06 CET
+"b_plus_tree_print_test" end time: Sep 25 13:05 CET
 "b_plus_tree_print_test" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -405,7 +408,7 @@ Test Passed.
 18/21 Test: disk_manager_test
 Command: "/home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test/disk_manager_test" "--gtest_color=yes" "--gtest_output=xml:/home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test/disk_manager_test.xml"
 Directory: /home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test
-"disk_manager_test" start time: Sep 25 09:06 CET
+"disk_manager_test" start time: Sep 25 13:05 CET
 Output:
 ----------------------------------------------------------
 Running main() from gmock_main.cc
@@ -413,7 +416,7 @@ Running main() from gmock_main.cc
 [0;32m[----------] [mGlobal test environment set-up.
 [0;32m[----------] [m3 tests from DiskManagerTest
 [0;32m[ RUN      ] [mDiskManagerTest.ReadWritePageTest
-2021-09-25 09:06:41 [home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/src/storage/disk/disk_manager.cpp:124:ReadPage] DEBUG - Read less than a page
+2021-09-25 13:05:23 [home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/src/storage/disk/disk_manager.cpp:124:ReadPage] DEBUG - Read less than a page
 [0;32m[       OK ] [mDiskManagerTest.ReadWritePageTest (0 ms)
 [0;32m[ RUN      ] [mDiskManagerTest.ReadWriteLogTest
 [0;32m[       OK ] [mDiskManagerTest.ReadWriteLogTest (0 ms)
@@ -429,7 +432,7 @@ Message :: can't open dblog file
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"disk_manager_test" end time: Sep 25 09:06 CET
+"disk_manager_test" end time: Sep 25 13:05 CET
 "disk_manager_test" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -437,7 +440,7 @@ Test Passed.
 19/21 Test: tmp_tuple_page_test
 Command: "/home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test/tmp_tuple_page_test" "--gtest_color=yes" "--gtest_output=xml:/home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test/tmp_tuple_page_test.xml"
 Directory: /home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test
-"tmp_tuple_page_test" start time: Sep 25 09:06 CET
+"tmp_tuple_page_test" start time: Sep 25 13:05 CET
 Output:
 ----------------------------------------------------------
 Running main() from gmock_main.cc
@@ -452,7 +455,7 @@ Running main() from gmock_main.cc
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"tmp_tuple_page_test" end time: Sep 25 09:06 CET
+"tmp_tuple_page_test" end time: Sep 25 13:05 CET
 "tmp_tuple_page_test" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -460,7 +463,7 @@ Test Passed.
 20/21 Test: tuple_test
 Command: "/home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test/tuple_test" "--gtest_color=yes" "--gtest_output=xml:/home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test/tuple_test.xml"
 Directory: /home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test
-"tuple_test" start time: Sep 25 09:06 CET
+"tuple_test" start time: Sep 25 13:05 CET
 Output:
 ----------------------------------------------------------
 Running main() from gmock_main.cc
@@ -475,7 +478,7 @@ Running main() from gmock_main.cc
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"tuple_test" end time: Sep 25 09:06 CET
+"tuple_test" end time: Sep 25 13:05 CET
 "tuple_test" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -483,7 +486,7 @@ Test Passed.
 21/21 Test: type_test
 Command: "/home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test/type_test" "--gtest_color=yes" "--gtest_output=xml:/home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test/type_test.xml"
 Directory: /home/mohamed/Documents/dev/database-engineering/resources/cmu_database/projects/bustub-private/build/test
-"type_test" start time: Sep 25 09:06 CET
+"type_test" start time: Sep 25 13:05 CET
 Output:
 ----------------------------------------------------------
 Running main() from gmock_main.cc
@@ -520,8 +523,8 @@ key info32
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"type_test" end time: Sep 25 09:06 CET
+"type_test" end time: Sep 25 13:05 CET
 "type_test" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Sep 25 09:06 CET
+End testing: Sep 25 13:05 CET

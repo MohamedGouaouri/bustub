@@ -53,7 +53,6 @@ class LRUReplacer : public Replacer {
   std::list<frame_id_t> pages_queue_;
   std::map<frame_id_t, size_t> pin_counts_;
   size_t max_num_pages_;
-  frame_id_t *victim_page_;
 };
 
 }  // namespace bustub

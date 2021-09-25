@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites tests="5" failures="0" disabled="0" errors="0" time="0" timestamp="2021-09-25T09:06:41.854" name="AllTests">
-  <testsuite name="TypeTests" tests="5" failures="0" disabled="0" skipped="0" errors="0" time="0" timestamp="2021-09-25T09:06:41.855">
-    <testcase name="InvalidTypeTest" status="run" result="completed" time="0" timestamp="2021-09-25T09:06:41.855" classname="TypeTests" />
-    <testcase name="GetInstanceTest" status="run" result="completed" time="0" timestamp="2021-09-25T09:06:41.855" classname="TypeTests" />
-    <testcase name="MaxValueTest" status="run" result="completed" time="0" timestamp="2021-09-25T09:06:41.855" classname="TypeTests" />
-    <testcase name="MinValueTest" status="run" result="completed" time="0" timestamp="2021-09-25T09:06:41.855" classname="TypeTests" />
-    <testcase name="TemplateTest" status="run" result="completed" time="0" timestamp="2021-09-25T09:06:41.855" classname="TypeTests" />
+<testsuites tests="5" failures="0" disabled="0" errors="0" time="0" timestamp="2021-09-25T13:05:23.986" name="AllTests">
+  <testsuite name="TypeTests" tests="5" failures="0" disabled="0" skipped="0" errors="0" time="0" timestamp="2021-09-25T13:05:23.986">
+    <testcase name="InvalidTypeTest" status="run" result="completed" time="0" timestamp="2021-09-25T13:05:23.986" classname="TypeTests" />
+    <testcase name="GetInstanceTest" status="run" result="completed" time="0" timestamp="2021-09-25T13:05:23.986" classname="TypeTests" />
+    <testcase name="MaxValueTest" status="run" result="completed" time="0" timestamp="2021-09-25T13:05:23.986" classname="TypeTests" />
+    <testcase name="MinValueTest" status="run" result="completed" time="0" timestamp="2021-09-25T13:05:23.986" classname="TypeTests" />
+    <testcase name="TemplateTest" status="run" result="completed" time="0" timestamp="2021-09-25T13:05:23.987" classname="TypeTests" />
   </testsuite>
 </testsuites>

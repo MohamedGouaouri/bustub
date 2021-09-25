@@ -16,7 +16,6 @@ namespace bustub {
 
 LRUReplacer::LRUReplacer(size_t num_pages) {
   this->max_num_pages_ = num_pages;
-  this->victim_page_ = nullptr;
 }
 
 LRUReplacer::~LRUReplacer() = default;
@@ -25,8 +24,7 @@ bool LRUReplacer::Victim(frame_id_t *frame_id) {
   if(Size() == 0) {
     return false;
   }
-  frame_id = &pages_queue_.front();
-  victim_page_ = frame_id;
+  *frame_id = pages_queue_.front();
   // pop it
   pages_queue_.pop_front();
   return true; }
@@ -37,7 +35,9 @@ void LRUReplacer::Pin(frame_id_t frame_id) {
   if (it != pages_queue_.end()){
     // frame is found
     // set pin count to 1 I think
-    pin_counts_[frame_id] = 1;
+    pin_counts_[frame_id]++;
+    // remove the frame containing the pinned page from the LRUReplacer
+    pages_queue_.remove(frame_id);
   }
 }
 
@@ -53,12 +53,11 @@ void LRUReplacer::Unpin(frame_id_t frame_id) {
       // push it back
       pages_queue_.push_back(frame_id);
     } else{
-      // element exists
-      pages_queue_.remove(frame_id);
-      // push it back
-      pages_queue_.push_back(frame_id);
+//      // element exists
+//      pages_queue_.remove(frame_id);
+//      // push it back
+//      pages_queue_.push_back(frame_id);
     }
-
   }
 }
 
