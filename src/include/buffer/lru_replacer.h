@@ -16,6 +16,7 @@
 #include <mutex>  // NOLINT
 #include <vector>
 #include <algorithm>
+#include <map>
 
 #include "buffer/replacer.h"
 #include "common/config.h"
@@ -50,6 +51,7 @@ class LRUReplacer : public Replacer {
   // TODO(student): implement me!
   // Some data structures to track page usage count
   std::list<frame_id_t> pages_queue_;
+  std::map<frame_id_t, size_t> pin_counts_;
   size_t max_num_pages_;
   frame_id_t *victim_page_;
 };
